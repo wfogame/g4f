@@ -1,0 +1,49 @@
+# Environment and secrets
+.env
+.env.local
+.env.*.local
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Cookies and authentication
+har_and_cookies/
+*.har
+auth_*.json
+private_key.pem
+public_key.pem
+
+# IDE and editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# Logs
+*.log
+.logging/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/
+.gui_cache/
+.models/
+.usage/
