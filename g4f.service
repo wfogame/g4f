@@ -1,0 +1,16 @@
+[Unit]
+Description=g4f API
+After=network.target
+
+[Service]
+User=OnlyAProgrammer
+WorkingDirectory=/home/OnlyAProgrammer/g4f-app
+EnvironmentFile=/home/OnlyAProgrammer/g4f-app/.env
+ExecStart=/home/OnlyAProgrammer/g4f-app/start_g4f.sh start
+ExecStop=/home/OnlyAProgrammer/g4f-app/start_g4f.sh stop
+ExecReload=/home/OnlyAProgrammer/g4f-app/start_g4f.sh restart
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
